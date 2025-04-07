@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="it's a 'rock-paper-scissors-master' website game ">
+    <title>rock-paper-scissors-master</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/image-rules-bonus.svg" type="image/svg">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="result-box">
+            <img src="images/logo.svg" alt="logo">
+            <div class="btnScror"><p class="s-text">score</p><p class="s-number">0</p></div>
+        </div>
+        <div class="round">
+            <p>round <span class="roundNumber">1</span></p>
+            <p>user: <span class="userN">0</span> : computer <span class="comN">0</span></p>
+        </div>
+        <div class="conImgBTNs">
+            <!-- user play the cart -->
+            <div class="con">
+                <div style="border: 15px solid  rgb(72, 101, 244);"><img id="paper" src="images/icon-paper.svg" alt=""></div>
+                <div style="border: 15px solid rgb(220, 46, 78);"><img id="rock" src="images/icon-rock.svg" alt=""></div>
+                <div style="border: 15px solid  rgb(236, 158, 14);"><img id="scissors" src="images/icon-scissors.svg" alt=""></div>
+            </div>
+
+            <!-- computer play a cart -->
+            <div class="comPlayCart">
+                <div class="cartLeft-CR">
+                    <p>your picked</p>
+                    <div class="user-picked" style="border-color:#4865f4;"><img id="paper" src="images/icon-paper.svg" alt=""></div>
+                </div>
+                <div class="cartRight-CR">
+                    <p>house picked</p>
+                    <div class="house-picked" style="border-color:#dc2e4e;"><img id="paper" src="images/icon-paper.svg" alt=""></div>
+                    <div class="wait-pick"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- alert -->
+    <div class="alert-result">
+        <div class="contentResult">
+            <div class="gameOver">" game over "</div>
+            <h2 class="resAlert" style="text-align: center;"></h2>
+            <div class="resultArelt">0 : 0</div>
+            <button class="btnResult">next round</button>
+        </div>
+    </div>
+
+    <!-- js -->
+     <script src="script.js"></script>
+</body>
+</html>
