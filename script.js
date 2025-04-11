@@ -159,3 +159,26 @@ function updateResultRound(userNum,comNum){
     document.querySelector('.userN').innerHTML = userNum
     document.querySelector('.comN').innerHTML = comNum
 }
+
+
+// 
+const knowRules = document.getElementById('knowRules')
+const rulePage = document.querySelector('.alertRules')
+const closeRulePage = document.querySelectorAll('.closeRules')
+
+knowRules.addEventListener('click',function(){
+    rulePage.style.display = 'flex'
+    setTimeout(() => {
+        rulePage.style.opacity = '1'
+    }, 100);
+})
+    
+
+closeRulePage.forEach((btn) =>{
+    btn.addEventListener('click',function(){
+        setTimeout(() => {
+            rulePage.style.opacity = '0'
+            rulePage.style.display = 'none'
+        }, 100);
+    })
+})
